@@ -1,6 +1,6 @@
 #ifndef stateMachineBuzz_included
 #define stateMachineBuzz_included
 
-void butonBuzzer();
+void buttonBuzzer();
 
 #endif // included

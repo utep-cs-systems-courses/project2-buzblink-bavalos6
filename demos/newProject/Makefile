@@ -11,7 +11,7 @@ AS              = msp430-elf-as
 all: labFile.elf 
 
 #additional rules for files
-labFile.elf: ${COMMON_OBJECTS} wdInterruptHandler.o p1_interrupt_handler.o buzzer.o switches.o stateMachines.o stateMachineBuzz.o mainFile.o led.o ../lib/libTimer.a
+labFile.elf: ${COMMON_OBJECTS} wdInterruptHandler.o p1_interrupt_handler.o buzzer.o switches.o led_assembly.o stateMachineBuzz.o mainFile.o led.o ../lib/libTimer.a
 	${CC} ${CFLAGS} ${LDFLAGS} -o $@ $^
 
 load: labFile.elf
